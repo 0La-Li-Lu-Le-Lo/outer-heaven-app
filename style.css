@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Watermark */
+body::before {
+  content: "";
+  background: url("outer-heaven-logo.png") no-repeat center center;
+  background-size: 300px;
+  opacity: 0.05;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.app-container {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px #000;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+#task-input, select, input[type="date"], button {
+  padding: 8px;
+  margin: 5px;
+  border-radius: 6px;
+  border: none;
+}
+
+button {
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #666;
+}
+
+.sort-buttons {
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #222;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.priority-high {
+  color: red;
+  font-weight: bold;
+}
+
+.priority-medium {
+  color: orange;
+}
+
+.priority-low {
+  color: lightgreen;
+}
+
+.task-buttons button {
+  margin-left: 5px;
+  padding: 4px 8px;
+  font-size: 0.9em;
+}

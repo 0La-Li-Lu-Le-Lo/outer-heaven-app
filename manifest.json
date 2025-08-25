@@ -1,0 +1,20 @@
+{
+  "name": "Outer Heaven Task Force",
+  "short_name": "OH Task",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#111111",
+  "theme_color": "#222222",
+  "icons": [
+    {
+      "src": "outer-heaven-logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "outer-heaven-logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
